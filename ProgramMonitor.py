@@ -7,8 +7,8 @@ process_name = "my_process.exe"
 process_path = "C:\\Program Files\\MyApp\\my_process.exe"
 process_rundir ="C:\\Program Files\\MyApp"
 
-with open('config.txt', 'r') as f:
-    content = f.read()
+with open('config.txt', 'rb') as f:
+    content = f.read().decode('utf-8')
     print(content)
     ls = content.split('=')
     process_path = ls[1]  
