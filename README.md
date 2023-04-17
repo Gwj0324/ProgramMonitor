@@ -12,3 +12,8 @@
 ```
 program_path=G:\NetReflash\dist\NetReflash\NetReflash.exe
 ```
+
+## bug记录：
+
+bug描述：点击控制台，会进快速编辑模式，按下按键，才会继续运行。
+解决方法：代码中取消控制台快速编辑模式。

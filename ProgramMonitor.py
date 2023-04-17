@@ -1,4 +1,5 @@
 import psutil
+import ctypes
 import time
 import subprocess
 import datetime
@@ -29,6 +30,10 @@ def is_running(process_name):
 
 def start_process(process_path):
     subprocess.Popen([process_path],cwd=process_rundir)
+
+#取消控制台快速编辑模式
+kernel32 = ctypes.windll.kernel32
+kernel32.SetConsoleMode(kernel32.GetStdHandle(-10), 128)
 
 while(True):
     if not is_running(process_name):
