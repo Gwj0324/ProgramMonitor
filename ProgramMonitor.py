@@ -3,11 +3,16 @@ import ctypes
 import time
 import subprocess
 import datetime
+import os
 process_name = "my_process.exe"
 process_path = "C:\\Program Files\\MyApp\\my_process.exe"
 process_rundir ="C:\\Program Files\\MyApp"
 
-with open('config.txt', 'rb') as f:
+# 获取当前 .exe 文件所在路径
+exe_path = os.path.dirname(os.path.abspath(__file__))
+print(".exe 文件所在路径为：", exe_path)
+
+with open(exe_path+'\\config.txt', 'rb') as f:
     content = f.read().decode('utf-8')
     print(content)
     ls = content.split('=')
