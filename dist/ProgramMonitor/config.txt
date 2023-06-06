@@ -1,1 +1,1 @@
-program_path=G:\新建文件夹 (2)\NetReflash\dist\NetReflash\NetReflash.exe
+program_path=G:\NetReflash\dist\NetReflash\NetReflash.exe

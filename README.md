@@ -32,4 +32,3 @@ program_path=G:\NetReflash\dist\NetReflash\NetReflash.exe
 ### 2,bug描述：配置文件无法存储中文路径
 
 解决方法：以二进制格式读取配置文件，再以utf-8格式解析配置文件。
-
