@@ -1,1 +1,2 @@
-program_path=G:\新建文件夹 (2)\NetReflash\dist\NetReflash\NetReflash.exe
+program_path=C:\Users\gaowujie\Desktop\test2\untitled10.exe
+isJudgeNotResponding=1

@@ -2,15 +2,18 @@
 
 ## 程序功能说明
 
-在Windows系统下监控某个程序是否在运行，若不在运行，则拉起
+1，在Windows系统下监控某个程序是否在运行，若不在运行，则拉起。
+2，在Windows系统下监控某个程序是否未响应，若检测到未响应，则将程序杀死，重新拉起。
 
 ## 使用说明：
 
-将dist目录下的ProgramMonitor文件夹拷贝到你的电脑上，然后编辑ProgramMonitor/config.txt文件，设置程序运行路径。注意在末尾不要换行。
+将dist目录下的ProgramMonitor文件夹拷贝到你的电脑上，然后编辑ProgramMonitor/config.txt文件，设置程序运行路径。
+`isJudgeNotResponding=1`这里若将`isJudgeNotResponding`设置为1则会开启检测未响应功能，置为0则会关闭检测未响应功能。注意在末尾不要换行。
 
 例如：
 ```
 program_path=G:\NetReflash\dist\NetReflash\NetReflash.exe
+isJudgeNotResponding=1
 ```
 
 **注意：**
